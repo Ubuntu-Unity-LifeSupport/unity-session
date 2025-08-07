@@ -1,0 +1,4 @@
+[Cinnamon Session]
+Name=Unity
+RequiredComponents=unity-settings-daemon;
+DesktopName=Unity:Unity7:ubuntu

@@ -1,0 +1,7 @@
+unity-session (49) questing; urgency=medium
+
+  * Pull the unity-session package from the gnome-session source package
+    into its own source package. (LP: #2119374)
+  * Switch to using cinnamon-session, an old fork of gnome-session.
+
+ -- Alessandro Astone <alessandro.astone@canonical.com>  Thu, 07 Aug 2025 17:48:15 +0200

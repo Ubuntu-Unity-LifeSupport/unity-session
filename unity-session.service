@@ -1,0 +1,6 @@
+[Unit]
+Description=Unity Session Manager
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/cinnamon-session --session=unity

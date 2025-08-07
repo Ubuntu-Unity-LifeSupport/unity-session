@@ -1,0 +1,28 @@
+Source: unity-session
+Section: gnome
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.0
+
+Package: unity-session
+Architecture: all
+Depends: dbus-user-session,
+         cinnamon-session,
+# for org.cinnamon.settings-daemon.plugins.power gschema
+         cinnamon-settings-daemon,
+# for org.cinnamon.sounds gschema
+         cinnamon-common,
+         systemd,
+         unity,
+         unity-settings-daemon,
+         ${misc:Depends}
+Recommends: gtk3-nocsd,
+            rhythmbox-plugin-zeitgeist,
+            session-migration,
+            zeitgeist-datahub
+Provides: x-session-manager
+Conflicts: gnome-session-bin (<< 49~beta)
+Description: Unity session, previous ubuntu default experience.
+ This package contains the required components for the Unity session.
+ It can be started from a display manager such as LightDM.

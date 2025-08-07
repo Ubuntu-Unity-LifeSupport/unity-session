@@ -1,0 +1,8 @@
+*.nemo_action /usr/share/nemo/actions/
+50-unity.conf /usr/share/lightdm/lightdm.conf.d
+nemo-unity-autostart.desktop /etc/xdg/autostart/
+unity-session.target usr/lib/systemd/user/
+unity-session.service usr/lib/systemd/user/
+unity.session usr/share/cinnamon-session/sessions/
+unity.desktop usr/share/xsessions/
+run-systemd-session usr/libexec
