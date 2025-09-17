@@ -1,3 +1,9 @@
+unity-session (49.2) questing; urgency=medium
+
+  * Move Exec= from unity.desktop into its own script.
+
+ -- Rudra Saraswat <rs2009@ubuntu.com>  Wed, 17 Sep 2025 20:36:03 +0100
+
 unity-session (49.1) questing; urgency=medium
 
   * Relicense under GPL-2.0-only

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Unity
 Comment=This session logs you into Unity
-Exec=/usr/libexec/run-systemd-session unity-session.target
+Exec=/usr/bin/unity-session
 TryExec=/usr/bin/unity
 Type=Application
 DesktopNames=Unity;Unity7;ubuntu;

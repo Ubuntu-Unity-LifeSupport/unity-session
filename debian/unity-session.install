@@ -3,6 +3,7 @@
 nemo-unity-autostart.desktop /etc/xdg/autostart/
 unity-session.target usr/lib/systemd/user/
 unity-session.service usr/lib/systemd/user/
+unity-session usr/bin/
 unity.session usr/share/cinnamon-session/sessions/
 unity.desktop usr/share/xsessions/
 run-systemd-session usr/libexec
