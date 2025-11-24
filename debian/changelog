@@ -1,3 +1,11 @@
+unity-session (49.3) resolute; urgency=medium
+
+  * Start XDG autostart apps using xdg-desktop-autostart.target
+  * Ship gsettings override to hide Onboard by default
+  * Set default switch- and move-to-workspace keybindings in gsettings override
+
+ -- Alfred Neumayer <dev.beidl@gmail.com>  Tue, 25 Nov 2025 00:53:33 +0100
+
 unity-session (49.2) questing; urgency=medium
 
   * Move Exec= from unity.desktop into its own script.
