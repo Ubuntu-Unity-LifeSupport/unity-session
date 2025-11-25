@@ -7,4 +7,4 @@ unity-session usr/bin/
 unity.session usr/share/cinnamon-session/sessions/
 unity.desktop usr/share/xsessions/
 run-systemd-session usr/libexec
-21_ubuntu-unity-onboard.gschema.override usr/share/glib-2.0/schemas
+21_ubuntu-unity.gschema.override usr/share/glib-2.0/schemas
