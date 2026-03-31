@@ -1,12 +1,7 @@
-unity-session (49.3ubuntu2) resolute; urgency=medium
+unity-session (49.4) resolute; urgency=medium
 
-  * Replace in Recommends ligtk3-nocsd with libgtk-nocsd0 (LP: #2146557)
-
- -- Tomasz Jeruzalski <tomekdev17@gmail.com>  Tue, 31 Mar 2026 21:53:09 +0200
-
-unity-session (49.3ubuntu1) resolute; urgency=medium
-
-  * Remove unused Recommends session-migration (LP:#2146558)
+  * Replace in Recommends gtk3-nocsd with libgtk-nocsd0 (LP: #2146557)
+  * Remove unused Recommends session-migration (LP: #2146558)
 
  -- Tomasz Jeruzalski <tomekdev17@gmail.com>  Tue, 31 Mar 2026 21:34:42 +0200
 
