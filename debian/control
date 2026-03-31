@@ -19,7 +19,6 @@ Depends: dbus-user-session,
          ${misc:Depends}
 Recommends: gtk3-nocsd,
             rhythmbox-plugin-zeitgeist,
-            session-migration,
             zeitgeist-datahub
 Provides: x-session-manager
 Conflicts: gnome-session-bin (<< 49~beta)
