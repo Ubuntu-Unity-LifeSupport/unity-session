@@ -17,7 +17,7 @@ Depends: dbus-user-session,
          unity,
          unity-settings-daemon,
          ${misc:Depends}
-Recommends: gtk3-nocsd,
+Recommends: libgtk-nocsd0,
             rhythmbox-plugin-zeitgeist,
             zeitgeist-datahub
 Provides: x-session-manager
