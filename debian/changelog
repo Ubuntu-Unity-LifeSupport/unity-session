@@ -1,3 +1,12 @@
+unity-session (49.4+unity1) resolute; urgency=medium
+
+  * run-systemd-session: stop graphical-session.target at session start
+    only when it is not inactive. Stopping it anyway killed gvfs-daemon
+    while ibus-daemon was activating it, and the desktop stayed black
+    for two minutes after some logins.
+
+ -- Ubuntu Unity Life Support <mihail.rozshko@gmail.com>  Thu, 24 Sep 2026 20:07:10 +0000
+
 unity-session (49.4) resolute; urgency=medium
 
   * Replace in Recommends gtk3-nocsd with libgtk-nocsd0 (LP: #2146557)
