@@ -4,8 +4,17 @@ set -e
 # some old Qt programs still check this long-deprecated env var
 dbus-update-activation-environment --systemd GNOME_DESKTOP_SESSION_ID=this-is-deprecated
 
-# stop any lingering active units from a previous session
-systemctl --user stop graphical-session.target graphical-session-pre.target
+# stop any lingering active units from a previous session - only if there are
+# any: stopping an inactive target still stops the units that are PartOf it
+# and are being started right now, such as gvfs-daemon activated over D-Bus by
+# ibus-daemon while this runs. Their D-Bus activation is then left waiting for
+# dbus-daemon's 120 s timeout, and everything that needs them with it.
+for target in graphical-session.target graphical-session-pre.target; do
+    if [ "$(systemctl --user show -p ActiveState --value $target)" != inactive ]; then
+        systemctl --user stop graphical-session.target graphical-session-pre.target
+        break
+    fi
+done
 
 # robustness: if the previous graphical session left some failed units,
 # reset them so that they don't break this startup
