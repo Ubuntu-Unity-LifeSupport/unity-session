@@ -1,3 +1,12 @@
+unity-session (49.4+unity2) resolute; urgency=medium
+
+  * Recommends libunity-gtk4-menu0, the Unity session's GTK4 global menu
+    library, next to libgtk-nocsd0. It is our own package, not in the
+    archive, and nothing pulled it, so no Unity installation got the
+    GTK4 menu (UNITY-20260927-037).
+
+ -- Ubuntu Unity Life Support <mihail.rozshko@gmail.com>  Tue, 13 Oct 2026 15:16:48 +0000
+
 unity-session (49.4+unity1) resolute; urgency=medium
 
   * run-systemd-session: stop graphical-session.target at session start
