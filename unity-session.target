@@ -5,6 +5,7 @@ Requires=graphical-session-pre.target
 BindsTo=graphical-session.target
 # session leader -- if this dies, die along with it
 BindsTo=unity-session.service
+Wants=nemo-unity.service
 # legacy xdg .desktop autostart
 Requires=xdg-desktop-autostart.target
 Before=xdg-desktop-autostart.target

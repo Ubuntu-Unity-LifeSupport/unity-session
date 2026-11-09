@@ -1,0 +1,9 @@
+[Unit]
+Description=Nemo desktop icons
+PartOf=graphical-session.target
+After=unity-settings-daemon.service
+ConditionFileIsExecutable=/usr/bin/nemo-desktop
+
+[Service]
+ExecStart=/usr/bin/nemo-desktop
+Restart=on-failure
